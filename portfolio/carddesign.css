@@ -1,0 +1,104 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 200px;
+  }
+  
+  .photography {
+    width: 80%;
+    position: relative;
+  }
+  
+  .photography img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.40s;
+  }
+
+  .photography .tip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .photography:hover .tip {
+    opacity: 1;
+  }
+  
+  .card:not(.photography) {
+    flex-grow: 1;
+  }
+
+  .videography {
+    width: 80%;
+    position: relative;
+  }
+  
+  .videography video {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .videography .tip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .videography:hover .tip {
+    opacity: 1;
+  }
+  
+  .card:not(.videography) {
+    flex-grow: 1;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 400ms;
+    position: relative;
+  }
+  
+  .card p.second-text {
+    font-size: 0.7em;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+  }

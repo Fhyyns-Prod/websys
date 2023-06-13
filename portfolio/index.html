@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfoliodesign.css">
+        <link rel="stylesheet" href="carddesign.css">
+        <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+    <header>
+        <h2 class="logoname">Fhyyns Productions</h2>
+        <nav class="navigation">
+              <a href="../index.html">HOME</a>
+              <a href="../services/index.html">SERVICES</a>
+              <a href="../portfolio/index.html">PORTFOLIO</a>
+              <a href="../contacts/index.html">CONTACTS</a>
+            <button class="btnLogin-popup">Booking</button>
+        </nav>
+    </header>
+
+<body>
+
+    <div>
+        <img class="banner" src="../Assets/Banner-Services.jpg">
+    </div>
+
+    <h1 class="title" align="center">Portfolio</h1>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <!--LOGIN FORM-->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="home.html" method="post" name="form" onsubmit="returnvalidated()">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" name="email" placeholder="Email or Username" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn2">Login</button>
+                <div class="login-register">
+                    <p class="labellabel">Do you have an account?
+                    <a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <!--REGISTER FORM-->
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required placeholder="New Password">
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required placeholder="Confirm Password">
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn2">Register</button>
+                <div class="login-register">
+                    <p class="labellabel">Already have an account?
+                    <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="cards">
+      <div class="card photography">
+          <img src="../Assets/Birthday Celebration 3/4.jpg" alt="Photography">
+          <a href="../photography/index.html"><p class="tip">Photography</p></a>
+          <br>
+      </div>
+      <div class="card videography">
+          <video autoplay loop muted>
+            <source src="../Assets/Video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <a href="../videography/index.html"><p class="tip">Videography</p></a>
+          <br>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+   
+
+    <script src="../login_register_popup.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+<footer>
+  <div class="footer-section">
+    <h3 class="subfooter">Fhyyns Productions</h3>
+    <p class="slogan" align="justify">"Capturing Moments, Crafting Stories: Your Vision, Our Lens"</p>
+  </div>
+  <div class="footer-section">
+    <h3 class="subfooter">Newsletter</h3>
+    <form class="subscribeform">
+      <input type="email" placeholder="Enter your email address" required>
+      <button class="subscribe" type="submit" onclick="showAlert()">Subscribe</button>
+    </form>
+  </div>
+  <div class="footer-section">
+    <h3 class="subfooter">Contact Us</h3>
+    <p><i class="fa fa-envelope icon"></i> Email: fhyyns.prod@gmail.com</p>
+    <p><i class="fa fa-phone"></i> Phone: 0969-427-1994</p>
+    <p><i class="fa fa-map-marker"></i> Address: Valenzuela, Philippines</p>
+  </div>
+   
+</footer>
+
+</html> 
